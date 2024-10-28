@@ -105,6 +105,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>job</finalName>
 	</build>
 
 </project>

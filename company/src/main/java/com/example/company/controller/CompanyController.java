@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CompanyController {
   private final CompanyService companyService;
-//  @GetMapping("/company")
-//  @ResponseStatus(HttpStatus.OK)
-//  public List<Company>getAll(){
-//    return companyService.getAllCompanies();
-//  }
+  @GetMapping("/company")
+  @ResponseStatus(HttpStatus.OK)
+  public List<Company>getAll(){
+    return companyService.getAllCompanies();
+  }
 
   @PostMapping("/company")
   @ResponseStatus(HttpStatus.CREATED)

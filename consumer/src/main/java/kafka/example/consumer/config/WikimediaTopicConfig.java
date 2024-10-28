@@ -11,6 +11,8 @@ public class WikimediaTopicConfig {
   public NewTopic wikimediaStreamTopic() {
     return TopicBuilder
         .name("wikimedia-stream")
+        .partitions(3)// number of partitions must be less than or equal to number of brokers
+        .replicas(3) //
         .build();
   }
 }
